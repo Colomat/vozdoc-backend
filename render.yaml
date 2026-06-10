@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vozdoc-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: GEMINI_API_KEY
+        value: AIzaSyDcohq4_KmyUFK6dUTVajPYAb-Dx-tgeiA
